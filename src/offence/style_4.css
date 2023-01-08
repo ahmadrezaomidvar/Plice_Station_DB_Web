@@ -1,0 +1,125 @@
+/* 
+  The MIT License (MIT)
+  Copyright (c) 2022 jgx (https://codepen.io/jgx/pen/ANRBpb)
+*/
+
+body{
+  font:1.2em normal Arial,sans-serif;
+  color:#34495E;
+}
+
+h1{
+  text-align:center;
+  text-transform:uppercase;
+  letter-spacing:-2px;
+  font-size:2.5em;
+  margin:20px 0;
+}
+
+#container{
+  width:90%;
+  margin:auto;
+}
+
+table{
+  border-collapse:collapse;
+  width:100%;
+}
+
+table.normal{
+    border:2px solid #459cf4;
+}
+
+thead{
+  background:#459cf4;
+  color:white;
+}
+
+th,td{
+  text-align:center;
+  padding:5px 0;
+}
+
+tbody tr:nth-child(even){
+  background:#ECF0F1;
+}
+
+tbody tr:hover{
+background:#BDC3C7;
+  color:#FFFFFF;
+}
+
+.fixed{
+  top:0;
+  position:fixed;
+  width:auto;
+ display:none;
+}
+
+.end{
+  margin-top:800px;
+}
+
+/* 
+The MIT License (MIT)
+
+Copyright (c) 2022 jo74 (https://codepen.io/jb74/pen/zNPYdR)
+*/
+
+#container_home {
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+}
+
+div.rond {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  vertical-align: top;
+  border-radius: 75px;
+  background-color: #333;
+  transform: scale(0.8, 0.8);
+  transition: 0.5s;
+  z-index: 1;
+}
+
+div.rond2 {
+  position: absolute;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  vertical-align: top;
+  border-radius: 75px;
+  background-color: white;
+  transform: scale(0.6, 0.6);
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.rondlogo {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  vertical-align: top;
+  border-radius: 75px;
+  background-color: blue;
+  vertical-align: middle;
+  background-image: url("https://pierredominique.dunegestion.com/w3/templates/tpl_0033/img/home_footer2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+#container_home:hover > .rond {
+  transform: scale(1, 1);
+}
+#container_home:hover > .rond2 {
+  transform: scale(0.93, 0.93);
+}
+#container_home:hover > .rondlogo {
+  transform: scale(0.8, 0.8);
+}
